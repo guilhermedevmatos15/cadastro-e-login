@@ -1,14 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* All variations (no italic) */
+
 :root {
-   --cor01: #ed1b1b;
-   --cor02: #2369e3;
-   --cor03: #063d1e;
+   --cor01: #3FF5D7;
+   --cor02: #39DBC0;
+   --cor02: #2FB59F;
+   --cor02: #1E7567;
+   --cor02: #0E362F;
 
-   --font-padrao: 'Bebas Neue', cursive;
-   --font-secundaria: Arial, Helvetica, sans-serif;
+   --font-padrao: 'Poppins', Arial, sans-serif;
 }
-
 * {
    margin: 0px;
    padding: 0px;
