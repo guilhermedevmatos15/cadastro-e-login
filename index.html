@@ -9,47 +9,56 @@
    <title>Criar uma conta</title>
 </head>
 <body>
-   <section>
-      <h1>Criar sua conta</h1>
-      <form>
-         <aside class="inputs">
-            <label for="user">Nome de usuário</label>
-            <div class="grouper-inputs">
-               <input type="text" id="user" placeholder="Digite o usuário">
-               <i class="fa-solid fa-circle-exclamation"></i>
-               <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div>
-         </aside>
-         <aside class="inputs">
-            <label for="email">Email</label>
-            <div class="grouper-inputs">
-               <input type="email" id="email" placeholder="Digite seu email">
-               <i class="fa-solid fa-circle-exclamation"></i>
-               <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div>
-         </aside>
-         <aside class="inputs">
-            <label for="password">Senha</label>
-            <div class="grouper-inputs">
-               <input type="password" id="password" placeholder="Digite sua senha">
-               <i class="fa-solid fa-circle-exclamation"></i>
-               <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div>
-         </aside>
-         <aside class="inputs">
-            <label for="password-confirmation">Confirme sua senha</label>
-            <div class="grouper-inputs">
-               <input type="password" id="password-confirmation" placeholder="Digite a senha novamente">
-               <i class="fa-solid fa-circle-exclamation"></i>
-               <i class="fa-sharp fa-solid fa-circle-check"></i>
-            </div>
-         </aside>
-         <button type="button">Criar conta</button>
-      </form>
-   </section>
-   <section class="go-to-login">
-      <h2>Já tem uma conta? Faça seu login</h2>
-   </section>
+   <main>
+      <section>
+         <h1>Criar sua conta</h1>
+         <form>
+            <aside class="inputs">
+               <label for="user">Nome de usuário</label>
+               <div class="grouper-inputs">
+                  <input type="text" id="user" placeholder="Digite o usuário">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+               </div>
+               <span></span>
+            </aside>
+            <aside class="inputs">
+               <label for="email">Email</label>
+               <div class="grouper-inputs">
+                  <input type="email" id="email" placeholder="Digite seu email">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+               </div>
+               <span></span>
+            </aside>
+            <aside class="inputs">
+               <label for="password">Senha</label>
+               <div class="grouper-inputs">
+                  <input type="password" id="password" placeholder="Digite sua senha">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+               </div>
+               <span></span>
+            </aside>
+            <aside class="inputs">
+               <label for="password-confirmation">Confirme sua senha</label>
+               <div class="grouper-inputs">
+                  <input type="password" id="password-confirmation" placeholder="Digite a senha novamente">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+               </div>
+               <span></span>
+            </aside>
+            <aside class="buttons">
+               <button type="button">Criar conta</button>
+               <button type="button" id="faça-login">Faça login</button>
+            </aside>
+         </form>
+      </section>
+      <section class="go-to-login">
+         <h2>Já tem uma conta? <a href="login-page/login.html">Faça seu login</a></h2>
+      </section>
+   </main>
 
    <script src="https://kit.fontawesome.com/401b17d60b.js" crossorigin="anonymous"></script>
    <script src="register-page/script.js"></script>
