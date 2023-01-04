@@ -20,16 +20,16 @@ const validations = {
          asideUser.classList.remove('success');
          message.innerHTML='Nome de usuário muito grande';
       } else {
-         asideUser.classList.remove('error');
          asideUser.classList.add('success');
+         asideUser.classList.remove('error');
       }
    },
    email() {
       const asideEmail = document.querySelectorAll('aside.inputs')[1];
       const message = document.querySelectorAll('aside.inputs span')[1];
       if (emailInput.value.includes('@') === true) {
-         asideEmail.classList.remove('error');
          asideEmail.classList.add('success');
+         asideEmail.classList.remove('error');
       } else if (emailInput.value.includes('@') === false) {
          asideEmail.classList.add('error');
          asideEmail.classList.remove('success');
@@ -57,19 +57,19 @@ const validations = {
       } else if(isNaN(passwordInput.value) == false) {
          asidePassword.classList.add('error');
          asidePassword.classList.remove('success');
-         message.innerHTML='Senha deve conter letras e números';
+         message.innerHTML='Senha deve conter letras';
       } else if(cont === 0) {
          asidePassword.classList.add('error');
          asidePassword.classList.remove('success');
-         message.innerHTML='Senha deve conter letras e números';
+         message.innerHTML='Senha deve conter letras';
       } else if(CONT === 0) {
          asidePassword.classList.add('error');
          asidePassword.classList.remove('success');
-         message.innerHTML='Senha deve uma letra maiúscula';
+         message.innerHTML='Senha deve conter uma letra maiúscula';
       } else {
          // Success
-         asidePassword.classList.remove('error');
          asidePassword.classList.add('success');
+         asidePassword.classList.remove('error');
       }
    },
    passwordConfirmation() {
@@ -80,8 +80,8 @@ const validations = {
          asidePasswordConfirmation.classList.remove('success');
          message.innerHTML='Senhas não estão iguais';
       } else {
-         asidePasswordConfirmation.classList.remove('error');
          asidePasswordConfirmation.classList.add('success');
+         asidePasswordConfirmation.classList.remove('error');
       }
    },
 }
