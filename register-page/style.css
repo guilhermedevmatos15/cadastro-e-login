@@ -197,6 +197,7 @@ section:not(.go-to-login) aside.success .grouper-inputs i.fa-circle-check {
       width: 40%;
       display: inline-block;
       background-color: transparent;
+      color: var(--cor05);
       border: 2px solid var(--cor03);
    }
    
