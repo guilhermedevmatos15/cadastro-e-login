@@ -43,6 +43,7 @@ main {
 }
 /* 1° Section */
 section:not(.go-to-login) {
+   border-radius: 20px;
    width: 60%;
    height: 100%;
    /* background-color: var(--cor04); */
@@ -64,7 +65,7 @@ section:not(.go-to-login) form {
 section:not(.go-to-login) aside.inputs {
    width: 85%;
    margin: auto;
-   margin-bottom: 7px;
+   margin-bottom: 15px;
 }
 section:not(.go-to-login) aside.inputs .grouper-inputs {
    border: 1px solid var(--cor05);
@@ -140,12 +141,6 @@ section.go-to-login h2 a {
 
 
 
-main.up section:not(.go-to-login) {
-   border-radius: 20px;
-}
-main.up section.go-to-login {
-   border-radius: 20px;
-}
 /* error e succes */
 aside.error span {
    color: #ff6363;
