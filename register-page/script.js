@@ -3,7 +3,6 @@ const emailInput = document.querySelector('input#email');
 const passwordInput = document.querySelector('input#password');
 const passwordConfirmationInput = document.querySelector('input#password-confirmation');
 const button = document.querySelector('button#create-an-account');
-
 const main = document.querySelector('main');
 
 const validations = {
@@ -70,11 +69,6 @@ const validations = {
    },
 }
 
-userInput.addEventListener('keyup', validations.user);
-emailInput.addEventListener('keyup', validations.email);
-passwordInput.addEventListener('keyup', validations.password);
-passwordConfirmationInput.addEventListener('keyup', validations.passwordConfirmation);
-
 button.addEventListener('click', () => {
    const allAsides = [...document.querySelectorAll('aside')];
    const inputsValidateds = allAsides.filter((aside) => {
@@ -102,8 +96,12 @@ button.addEventListener('click', () => {
    }
 });
 
-
 const buttonLogin = document.querySelector('button#faça-login');
 buttonLogin.addEventListener('click', () => {
    window.open('login-page/login.html');
 })
+
+userInput.addEventListener('keyup', validations.user);
+emailInput.addEventListener('keyup', validations.email);
+passwordInput.addEventListener('keyup', validations.password);
+passwordConfirmationInput.addEventListener('keyup', validations.passwordConfirmation);
