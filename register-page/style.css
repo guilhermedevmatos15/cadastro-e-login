@@ -10,6 +10,7 @@
    --cor03: #2FB59F;
    --cor04: #1E7567;
    --cor05: #0E362F;
+   --cor-Degadê: #0a493e;
    --cor-Input: #053b32;
 
    --font-padrao: 'Poppins', Arial, sans-serif;
@@ -23,7 +24,7 @@
 body {
    width: 100%;
    min-height: 100vh;
-   background: linear-gradient(90deg, var(--cor01), var(--cor04));
+   background: linear-gradient(45deg, var(--cor01), var(--cor-Degadê) 100%);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -44,13 +45,14 @@ main {
 section:not(.go-to-login) {
    width: 60%;
    height: 100%;
-   background-color: var(--cor04);
-   color: white;
+   /* background-color: var(--cor04); */
+   background-color: white;
+   color: var(--cor05);
    padding: 25px;
 }
 section:not(.go-to-login) h1 {
    font-size: 2.15rem;
-   color: var(--cor01);
+   color: var(--cor03);
    font-weight: 600;
    margin-bottom: 10px;
    text-align: center;
@@ -99,14 +101,14 @@ section:not(.go-to-login) button {
    border-radius: 10px;
    font-family: var(--font-padrao);
    font-weight: 500;
-   background-color: var(--cor03);
+   background-color: var(--cor04);
    color: white;
    cursor: pointer;
    transition: .3s;
 }
 section:not(.go-to-login) button:hover {
    transition: 0.4s;
-   background-color: var(--cor02);
+   background-color: var(--cor03);
 }
 section:not(.go-to-login) button#faça-login {
    display: none;
@@ -139,10 +141,10 @@ section.go-to-login h2 a {
 
 /* error e succes */
 aside.error span {
-   color: #ff7575;
+   color: #ff6363;
 }
 section:not(.go-to-login) aside.error .grouper-inputs {
-   border: 2px solid #ff4f4f;
+   border: 2px solid #ff8f8f;
 }
 section:not(.go-to-login) aside.error .grouper-inputs i.fa-circle-exclamation {
    display: inline;
@@ -153,11 +155,11 @@ aside.success span {
    display: none;
 }
 section:not(.go-to-login) aside.success .grouper-inputs {
-   border: 2px solid #44a978;
+   border: 2px solid #5cbf8f;
 }
 section:not(.go-to-login) aside.success .grouper-inputs i.fa-circle-check {
    display: inline;
-   color: #4cec9f;
+   color: #44af7b;
 }
 
 
