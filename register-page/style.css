@@ -63,11 +63,14 @@ section:not(.go-to-login) form {
    /* height: 70%; */
 }
 section:not(.go-to-login) aside.inputs {
+   position: relative;
    width: 85%;
+   height: 85px;
    margin: auto;
-   margin-bottom: 15px;
+   margin-bottom: 5px;
 }
 section:not(.go-to-login) aside.inputs .grouper-inputs {
+   position: relative;
    border: 1px solid var(--cor05);
    border-radius: 10px;
 }
@@ -84,6 +87,10 @@ section:not(.go-to-login) aside.inputs .grouper-inputs input::placeholder {
    color: var(--cor-Input);
 }
 section:not(.go-to-login) aside.inputs .grouper-inputs i {
+   position: absolute;
+   top: 50%;
+   right: 5px;
+   transform: translate(-50%, -50%);
    display: none;
 }
 section:not(.go-to-login) aside.inputs label {
@@ -91,12 +98,16 @@ section:not(.go-to-login) aside.inputs label {
    margin-bottom: 10px;
 }
 section:not(.go-to-login) aside.inputs span {
+   position: absolute;
+   left: 0;
+   bottom: 0;
    font-size: 0.75rem;
 }
 section:not(.go-to-login) button {
    width: 60%;
+   max-width: 200px;
    display: block;
-   margin: 20px auto 0px auto;
+   margin: 5px auto 0px auto;
    padding: 10px;
    border: none;
    border-radius: 10px;
@@ -118,7 +129,7 @@ section:not(.go-to-login) button#faça-login {
 section.go-to-login {
    width: 40%;
    height: 100%;
-   min-height: 444px;
+   min-height: 410px;
    background-color: var(--cor05);
    color: white;
    padding: 10px;

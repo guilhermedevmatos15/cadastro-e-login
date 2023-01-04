@@ -69,6 +69,12 @@ passwordInput.addEventListener('keyup', validations.passwordConfirmation);
 passwordConfirmationInput.addEventListener('keyup', validations.passwordConfirmation);
 
 button.addEventListener('click', () => {
+   // testando novamente se todos inputs estão corretos
+   validations.user();
+   validations.email();
+   validations.password();
+   validations.passwordConfirmation();
+
    const allAsides = [...document.querySelectorAll('aside')];
    const inputsValidateds = allAsides.filter((aside) => {
       if (aside.classList[1] === 'success') {
