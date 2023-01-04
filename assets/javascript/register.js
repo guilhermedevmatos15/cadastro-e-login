@@ -39,6 +39,17 @@ const validations = {
    password() {
       const asidePassword = document.querySelectorAll('aside.inputs')[2];
       const message = document.querySelectorAll('aside.inputs span')[2];
+      const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+      let cont = 0;
+      let CONT = 0;
+      for (letter of alphabet) {
+         if (passwordInput.value.includes(letter)) {
+            cont++;
+         };
+         if (passwordInput.value.includes(letter.toUpperCase())) {
+            CONT++;
+         };
+      }
       if (passwordInput.value.length < 8) {
          asidePassword.classList.add('error');
          asidePassword.classList.remove('success');
@@ -46,8 +57,17 @@ const validations = {
       } else if(isNaN(passwordInput.value) == false) {
          asidePassword.classList.add('error');
          asidePassword.classList.remove('success');
-         message.innerHTML='Senha não pode conter apenas números';
+         message.innerHTML='Senha deve conter letras e números';
+      } else if(cont === 0) {
+         asidePassword.classList.add('error');
+         asidePassword.classList.remove('success');
+         message.innerHTML='Senha deve conter letras e números';
+      } else if(CONT === 0) {
+         asidePassword.classList.add('error');
+         asidePassword.classList.remove('success');
+         message.innerHTML='Senha deve uma letra maiúscula';
       } else {
+         // Success
          asidePassword.classList.remove('error');
          asidePassword.classList.add('success');
       }
