@@ -43,6 +43,10 @@ const validations = {
          asidePassword.classList.add('error');
          asidePassword.classList.remove('success');
          message.innerHTML='Senha muito pequena';
+      } else if(isNaN(passwordInput.value) == false) {
+         asidePassword.classList.add('error');
+         asidePassword.classList.remove('success');
+         message.innerHTML='Senha não pode conter apenas números';
       } else {
          asidePassword.classList.remove('error');
          asidePassword.classList.add('success');
