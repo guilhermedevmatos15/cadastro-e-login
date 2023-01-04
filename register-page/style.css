@@ -10,7 +10,7 @@
    --cor03: #2FB59F;
    --cor04: #1E7567;
    --cor05: #0E362F;
-   --cor-Degadê: #0a493e;
+   --cor-Degadê: #15b3b6;
    --cor-Input: #053b32;
 
    --font-padrao: 'Poppins', Arial, sans-serif;
@@ -24,7 +24,7 @@
 body {
    width: 100%;
    min-height: 100vh;
-   background: linear-gradient(45deg, var(--cor01), var(--cor-Degadê) 100%);
+   background: linear-gradient(45deg, var(--cor01), #1d837f, var(--cor-Degadê));
    display: flex;
    justify-content: center;
    align-items: center;
