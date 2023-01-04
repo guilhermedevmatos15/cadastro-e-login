@@ -139,6 +139,13 @@ section.go-to-login h2 a {
 }
 
 
+
+main.up section:not(.go-to-login) {
+   border-radius: 20px;
+}
+main.up section.go-to-login {
+   border-radius: 20px;
+}
 /* error e succes */
 aside.error span {
    color: #ff6363;
@@ -199,6 +206,13 @@ section:not(.go-to-login) aside.success .grouper-inputs i.fa-circle-check {
       background-color: transparent;
       color: var(--cor05);
       border: 2px solid var(--cor03);
+   }
+   section:not(.go-to-login) button#faça-login:hover {
+      background-color: rgb(179, 255, 217);
+   }
+   section:not(.go-to-login) button#faça-login a {
+      text-decoration: none;
+      color: var(--cor05);
    }
    
    section.go-to-login {
