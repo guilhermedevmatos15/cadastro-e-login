@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+/* All variations (no italic) */
+
+:root {
+   --cor01: #3FF5D7;
+   --cor02: #39DBC0;
+   --cor03: #2FB59F;
+   --cor04: #1E7567;
+   --cor05: #0E362F;
+   --cor-Degadê: #15b3b6;
+   --cor-Input: #053b32;
+
+   --font-padrao: 'Poppins', Arial, sans-serif;
+}
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   min-height: 100vh;
+   background: linear-gradient(45deg, var(--cor-Degadê), #1d837f, var(--cor01));
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: var(--font-padrao);
+}
+
+main {
+   width: 50%;
+   min-width: 580px;
+   height: 480px;
+   min-height: 410px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+}
+main > section {
+   height: 100%;
+}
+
+main > .go-to-created {
+   width: 50%;
+   height: 100%;
+   padding: 10px;
+   background-color: var(--cor05);
+   color: white;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+}
+main > .go-to-created h2 {
+   font-family: var(--font-padrao);
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+main > .go-to-created h2 > a {
+   display: block;
+   color: var(--cor03);
+}
+
+main > .go-to-login {
+   width: 50%;
+   height: 85%;
+   padding: 20px;
+   background-color: white;
+   border-top-right-radius: 20px;
+   border-bottom-right-radius: 20px;
+}
+main > .go-to-login h1 {
+   font-size: 2.15rem;
+   color: var(--cor03);
+   font-weight: 600;
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   line-height: 1.2em;
+}
+main > .go-to-login form  {
+   height: 78%;
+}
+main > .go-to-login .inputs {
+   width: 80%;
+   margin: 0 auto 10px auto;
+}
+main > .go-to-login label {
+   font-size: 1.05rem;
+   margin-bottom: 10px;
+}
+main > .go-to-login input {
+   display: block;
+   width: 100%;
+   margin: auto;
+   padding: 10px;
+   border: 1px solid var(--cor04);
+   border-radius: 10px;
+   background-color: transparent;
+   outline: none;
+}
+main > .go-to-login .buttons {
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+main > .go-to-login input:focus {
+   border: 2px solid var(--cor03);
+}
+main > .go-to-login button {
+   width: 50%;
+   max-width: 200px;
+   margin-top: 20px;
+   padding: 10px;
+   border: none;
+   border-radius: 10px;
+   font-family: var(--font-padrao);
+   font-weight: 500;
+   background-color: var(--cor04);
+   color: white;
+   cursor: pointer;
+   transition: .3s;
+}
+main > .go-to-login button:hover {
+   background-color: var(--cor03);
+}
+main > .go-to-login button#criar-conta {
+   padding: 10px 5px;
+   width: 40%;
+   display: inline-block;
+   background-color: transparent;
+   color: var(--cor05);
+   border: 2px solid var(--cor03);
+}
+main > .go-to-login button#criar-conta > a {
+   text-decoration: none;
+   color: var(--cor05);
+}
+main > .go-to-login button#criar-conta:hover {
+   background-color: rgb(179, 255, 217);
+}
+
+
+@media (max-width: 1350px) {
+   main > .go-to-login h1 {
+      font-size: 1.8rem;
+      margin-top: 10px;
+   }
+   main > .go-to-login label {
+      font-size: 1rem;
+   }
+   main > .go-to-login .inputs {
+      width: 90%;
+   }
+   main > .go-to-login aside.buttons {
+      flex-direction: column;
+      gap: 10px;
+   }
+   main > .go-to-login aside.buttons > button {
+      width: 70%;
+      margin-top: 15px;
+   }
+   main > .go-to-login aside.buttons > button#criar-conta {
+      width: 70%;
+      margin-top: 0px;
+      padding: 10px;
+   }
+}
+@media (max-width: 660px) {
+   main {
+      min-width: 300px;
+   }
+   main > .go-to-created {
+      display: none;
+   }
+   main > .go-to-login {
+      width: 100%;
+      border-radius: 20px;
+   }
+}

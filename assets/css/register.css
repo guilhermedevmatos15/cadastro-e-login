@@ -104,8 +104,8 @@ section:not(.go-to-login) aside.inputs span {
    font-size: 0.75rem;
 }
 section:not(.go-to-login) button {
-   width: 60%;
-   max-width: 200px;
+   width: 100%;
+   max-width: 235px;
    display: block;
    margin: 5px auto 0px auto;
    padding: 10px;
