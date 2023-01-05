@@ -121,11 +121,11 @@ button.addEventListener('click', () => {
          span.innerHTML='';
       }
       // Acessar página de conta criada!
-      // window.location.href = "";
+      window.location.href = "pages/account-created.html";
    }
 });
 
 buttonLogin.addEventListener('click', () => {
-   window.location.assign("http://pt.stackoverflow.com");
+   // window.location.assign("http://pt.stackoverflow.com");
    // window.open('login-page/login.html');
 });
